@@ -80,25 +80,26 @@ notebooks/CODE_RUN.ipynb
 Итоговая zero-shot оценка на датасетах:
 
 Таблица результатов:
+
 | № | Датасет  | Метод      | Accuracy ||Notes |
 
-| № |---------|-----------|----------|----------|
+------------------------------------------------------
 
-| 0	| CIFAR-10	| CLIP	    | 0.889100 |	baseline |
+| 0	| CIFAR-10  | CLIP  | 0.889100 |	baseline |
 
-|1	| CIFAR-10	| CLIP+SAE	| 0.857400 |	SAE trained on CIFAR-10 |
+| 1	| CIFAR-10  | CLIP+SAE	| 0.857400 |	SAE trained on CIFAR-10 |
 
-|2	| Food-101	| CLIP	    | 0.796000 |	baseline (2000 samples) |
+| 2	| Food-101  | CLIP	    | 0.796000 |	baseline (2000 samples) |
 
-|3	| Food-101	| CLIP+SAE	| 0.789500 |	SAE trained on Food-101 (2000 samples) |
+| 3	| Food-101  | CLIP+SAE	| 0.789500 |	SAE trained on Food-101 (2000 samples) |
 
-|4	| Food-101	| CLIP	    | 0.801228 |	baseline (25250 samples) |
+| 4	| Food-101  | CLIP	    | 0.801228 |	baseline (25250 samples) |
 
-|5	| Food-101	| CLIP+SAE	| 0.798891 |	SAE trained on Food-101 (25250 samples) |
+| 5	| Food-101  | CLIP+SAE	| 0.798891 |	SAE trained on Food-101 (25250 samples) |
 
-|6	| Food-101	| CLIP	    | 0.801228 |	baseline (50500 samples) |
+| 6	| Food-101 | CLIP	    | 0.801228 |	baseline (50500 samples) |
 
-|7	|Food-101	| CLIP+SAE	  | 0.798891 |	SAE trained on Food-101 (50500 samples) |
+| 7	|Food-101	| CLIP+SAE	  | 0.798891 |	SAE trained on Food-101 (50500 samples) |
 
 
 
@@ -127,6 +128,7 @@ notebooks/CODE_RUN.ipynb
 Все эти файлы создаются или загружаются во время выполнения ноутбука.
 
 ---
+
 
 
 
