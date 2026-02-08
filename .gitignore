@@ -1,0 +1,17 @@
+# Data and results
+datasets/
+activations/
+models/
+results/
+feature_viz/
+
+# Python
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.json
