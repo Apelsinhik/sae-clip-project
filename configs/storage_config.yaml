@@ -1,0 +1,11 @@
+﻿# FILE: clip-sae-interpret/clip-sae-interpret_clean/configs/storage_config.yaml
+# -*- coding: utf-8 -*-
+
+storage:
+  mode: yandex   # local / yandex / gdrive / hf
+
+  yadisk_mount: "/content/yadisk"
+
+paths:
+  activations_remote: "/content/yadisk/SAE_PROJECT/activations/activations.pt"
+  checkpoints_remote: "/content/yadisk/SAE_PROJECT/checkpoints/"

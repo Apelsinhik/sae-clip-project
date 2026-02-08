@@ -1,0 +1,32 @@
+﻿# FILE: clip-sae-interpret_clean/configs/train_cifar10_512d_google.yaml
+# ВСЁ НА GOOGLE DRIVE!
+
+storage:
+  # Яндекс - ТОЛЬКО для чтения данных
+  yandex_root: "/content/yadisk/SAE_PROJECT"
+  
+  # Google - ДЛЯ ВСЕЙ ЗАПИСИ
+  google_root: "/content/drive/MyDrive/SAE_PROJECT"
+  logs_dir: "/content/drive/MyDrive/SAE_PROJECT/logs"
+
+data:
+  dataset: "cifar10"
+  activations_file: "activations_cifar10_vit_b32.pt"
+  extract_if_missing: false
+
+model:
+  input_dim: 512
+  latent_dim: 4096
+
+training:
+  epochs: 50
+  lr: 0.0005
+  l1_coef: 0.001
+  batch_size: 256
+  num_workers: 2
+
+saving:
+  # ⚡ ВАЖНО: Полный путь на Google Drive
+  checkpoints_dir: "/content/drive/MyDrive/SAE_PROJECT/models/sae_cifar_512d"
+  save_every: 10
+  model_name: "sae_cifar10"

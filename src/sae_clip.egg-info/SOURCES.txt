@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/sae_clip.egg-info/PKG-INFO
+src/sae_clip.egg-info/SOURCES.txt
+src/sae_clip.egg-info/dependency_links.txt
+src/sae_clip.egg-info/top_level.txt

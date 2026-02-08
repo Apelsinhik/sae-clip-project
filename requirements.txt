@@ -1,0 +1,13 @@
+﻿# FILE: clip-sae-interpret/clip-sae-interpret_clean/requirements.txt
+
+torch>=2.0
+torchvision>=0.15
+transformers>=4.40
+diffusers>=0.21.0
+accelerate>=0.20.0
+tqdm
+Pillow
+numpy
+PyYAML
+pandas
+scikit-learn

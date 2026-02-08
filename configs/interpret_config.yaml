@@ -1,0 +1,24 @@
+﻿# FILE: clip-sae-interpret/clip-sae-interpret_clean/configs/interpret_config.yaml
+# -*- coding: utf-8 -*-
+
+data:
+  root: "./data"              # для CIFAR/Food101
+  batch_size: 64
+
+sae:
+  input_dim: 768
+  latent_dim: 4096
+  weights: "./models/sae/sae_epoch_10.pt"
+
+analysis:
+  topk: 10                    # топ-к примеров для фичи
+
+output:
+  images: "./results/features/images/"
+  csv: "./results/features/interpretation.csv"
+  steering: "./results/steering/"
+
+steering:
+  features: [5, 17, 231]      # примеры feature IDs
+  prompts: ["a dog", "a cat", "a car"]
+  alpha: 2.0
