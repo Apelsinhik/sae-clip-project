@@ -1,24 +1,43 @@
-# SAE for CLIP – Project
+# SAE for CLIP – Интерпретация эмбеддингов CLIP с помощью Sparse Autoencoder
 
-Implementation of Sparse Autoencoder (SAE) for CLIP embeddings interpretation.
+Данный проект реализует полный исследовательский пайплайн для анализа и интерпретации эмбеддингов модели CLIP с использованием Sparse Autoencoder (SAE).
 
-## What is included
+Проект ориентирован на две популярные визуальные коллекции:
 
-- Training SAE on CLIP image embeddings  
-- Visualization of learned features  
-- Automatic feature interpretation  
-- Zero-shot evaluation on CIFAR-10 and Food-101  
+- **CIFAR-10**
+- **Food-101**
 
-## Structure
+---
 
-- src/ – main Python package  
-- scripts/ – utility scripts  
-- notebooks/ – runnable notebooks  
+## Цели проекта
 
-## How to run
+Основные задачи, решаемые в рамках работы:
 
-Open in Google Colab:
+- обучение разреженных автоэнкодеров (SAE) на эмбеддингах CLIP  
+- интерпретация скрытых признаков (features), изученных SAE  
+- визуализация фич через коллажи изображений  
+- автоматическая интерпретация фич с использованием VLM (OpenRouter / GPT-4o-mini)  
+- оценка влияния SAE на zero-shot классификацию  
+- сравнение результатов до и после применения SAE  
 
-notebooks/CODE_RUN.ipynb
+---
 
-All heavy data (datasets, models, activations) are stored on Google Drive and Yandex Disk and are not included in this repository.
+## Основные этапы пайплайна
+
+Проект включает следующие шаги:
+
+1. Загрузка и подготовка датасетов  
+2. Извлечение CLIP-активаций  
+3. Обучение SAE-моделей  
+4. Базовая zero-shot оценка CLIP  
+5. Оценка качества CLIP + SAE  
+6. Анализ активаций SAE  
+7. Генерация визуальных коллажей для фич  
+8. Автоматическая интерпретация (RU и EN)  
+9. Очистка и анализ интерпретаций  
+10. Формирование итоговых отчётов  
+
+---
+
+## Структура репозитория
+
