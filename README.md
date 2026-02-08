@@ -1,18 +1,24 @@
-﻿# FILE: clip-sae-interpret/clip-sae-interpret_clean/README.md
+# SAE for CLIP – Project
 
-# CLIP + SAE Interpretability Project
+Implementation of Sparse Autoencoder (SAE) for CLIP embeddings interpretation.
 
-Sparse Autoencoder (SAE) trained on CLIP (ViT-L/14) embeddings to extract interpretable latent features and steer Kandinsky 2.2 text-to-image model.
+## What is included
 
-## Features
-- Training SAE on CLIP embeddings
-- Zero-shot degradation analysis
-- Feature interpretability via VLM
-- Steering text-to-image generation (+/- feature)
-- Ready for Colab demo and HF publication
+- Training SAE on CLIP image embeddings  
+- Visualization of learned features  
+- Automatic feature interpretation  
+- Zero-shot evaluation on CIFAR-10 and Food-101  
 
-## Install
+## Structure
 
-```bash
-pip install -r requirements.txt
-pip install -e .
+- src/ – main Python package  
+- scripts/ – utility scripts  
+- notebooks/ – runnable notebooks  
+
+## How to run
+
+Open in Google Colab:
+
+notebooks/CODE_RUN.ipynb
+
+All heavy data (datasets, models, activations) are stored on Google Drive and Yandex Disk and are not included in this repository.
